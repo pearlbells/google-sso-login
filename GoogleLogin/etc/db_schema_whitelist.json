@@ -1,0 +1,16 @@
+{
+    "pw_social_login": {
+        "column": {
+            "id": true,
+            "social_id": true,
+            "customer_id": true,
+            "type": true,
+            "social_created": true,
+            "status": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "PW_SOCIAL_LOGIN_CUSTOMER_ID_CUSTOMER_ENTITY_ENTITY_ID": true
+        }
+    }
+}

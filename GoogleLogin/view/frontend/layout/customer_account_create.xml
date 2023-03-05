@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <referenceBlock name="customer_form_register" remove="true"/>
+            <container name="google.login.view" as="google_view" label="Google Login Container" htmlTag="div" htmlClass="google_view">
+                <block name="google.viewmodel" template="BA_GoogleLogin::type/google.phtml">
+                    <arguments>
+                        <argument name="view_model" xsi:type="object">BA\GoogleLogin\ViewModel\Login\Index</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>        
+    </body>
+</page>

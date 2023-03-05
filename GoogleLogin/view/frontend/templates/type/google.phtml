@@ -1,0 +1,10 @@
+<?php
+
+/** @var \BA\GoogleLogin\ViewModel\Login\Index $viewModel */
+$viewModel = $block->getViewModel();
+?>
+<?php if($viewModel->isEnabled()) : ?>
+    <div class="google-account">
+        <a href="<?= $block->escapeUrl($viewModel->getAuthUrl());  ?>" class="action primary"><?= $block->escapeHtml($viewModel->getLabel());  ?></a>
+    </div>
+<?php endif; ?>

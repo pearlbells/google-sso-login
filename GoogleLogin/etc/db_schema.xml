@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+
+    <table name="ba_social_login">
+        <column name="id" xsi:type="int" unsigned="true" nullable="false" comment="Social Id" identity="true" />
+        <column name="social_id" xsi:type="varchar" length="256" nullable="false" comment="Social Identifier" />
+        <column name="customer_id" xsi:type="int" unsigned="true" nullable="false" comment="Customer Id" />
+        <column name="type" xsi:type="varchar" length="256" nullable="false" comment="Social Login Type" />
+        <column name="social_created" xsi:type="datetime" nullable="false" comment="Created Date" />
+        <column name="status" xsi:type="tinyint" default="1" nullable="false" comment="Status " />
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id" />
+        </constraint>
+
+        <constraint xsi:type="foreign" referenceId="FK_BA_SOCIAL_LOGIN_CUSTOMER_ID" table="ba_social_login" column="customer_id" referenceTable="customer_entity" referenceColumn="entity_id" onDelete="CASCADE" />
+
+    </table>
+</schema>

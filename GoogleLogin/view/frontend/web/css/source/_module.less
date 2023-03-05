@@ -1,0 +1,28 @@
+.popup-authentication {
+
+    .block-authentication .block.block-new-customer,
+    .block-authentication .block-new-customer .block-content,
+    .fieldset>.field,
+    .actions-toolbar,
+    .block-content,
+    .block-authentication .block-title {
+        display: none;
+    }
+
+    .modal-content .block-authentication {
+        border: none;
+    }
+
+    .block-authentication .block[class]+.block {
+        border: none;
+    }
+
+    .block-authentication .block[class]+.block:before {
+        display: none;
+    }
+}
+
+.modals-wrapper .modal-popup.popup-authentication .modal-inner-wrap {
+    width: 330px;
+    min-width: 330px;
+}

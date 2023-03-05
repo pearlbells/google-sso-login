@@ -1,0 +1,22 @@
+{
+    "name": "brandaddition/module-googlelogin",
+    "description": "Google Login",
+    "type": "magento2-module",
+    "authors": [
+        {
+            "name": "Brand Addition",
+            "email": "admin@brandaddition.com"
+        }
+    ],
+    "require": {
+        "google/apiclient": "^2.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "BA\\GoogleLogin\\": ""
+        }
+    }
+}
