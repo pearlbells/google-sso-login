@@ -1,11 +1,11 @@
 {
-    "name": "brandaddition/module-googlelogin",
+    "name": "ba/module-googlelogin",
     "description": "Google Login",
     "type": "magento2-module",
     "authors": [
         {
-            "name": "Brand Addition",
-            "email": "admin@brandaddition.com"
+            "name": "Pearlbells",
+            "email": "admin@pearlbells.com"
         }
     ],
     "require": {
